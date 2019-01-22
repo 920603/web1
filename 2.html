@@ -4,31 +4,47 @@
   <title>THE CATS - ECHO</title>
   <meta charset="utf-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132903858-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-132903858-1');
-</script>
-
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132903858-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-132903858-1');
+  </script>
+  <style>
+    #active {
+      color: red;
+    }
+    .saw {
+      color:gray;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+  </style>
 </head>
+
+
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <ol>
-    <li><a href="1.html">Delta</a></li>
-    <li><a href="2.html">Echo</a></li>
+    <li><a href="1.html" class="saw">Delta</a></li>
+    <li><a href="2.html" class="saw" id="active">Echo</a></li>
   </ol>
   <h2>Echo</h2>
-  <p>에코는 공주님이다. 아주 착한 공주님이다.
+  <p>
+    에코는 공주님이다. 아주 착한 공주님이다.
   </p>
   <img src="Echo.jpg" width="500">
   <p><strong>에코</strong></p>
   <p>
     <div id="disqus_thread"></div>
     <script>
-
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -46,7 +62,6 @@
     })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
   </p>
 </body>
 </html>
